@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sản phẩm - Color Tools</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    /* TITLE */
+    .page-title {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .page-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .page-title p {
+      color: #666;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 40px 50px;
+    }
+
+    .section h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-left: 5px solid #ff6a00;
+      padding-left: 10px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h4 {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #ee0979;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #ff6a00;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ee0979;
+    }
+
+    /* BADGE */
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      color: white;
+      font-size: 12px;
+      border-radius: 5px;
+    }
+
+    .best { background: #2ecc71; }
+    .hot { background: #e74c3c; }
+    .deal { background: #f1c40f; color: black; }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎨 Color Tools</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="khuyenmai.html">Khuyến mãi</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- TITLE -->
+  <div class="page-title">
+    <h2>Sản Phẩm Dụng Cụ Màu</h2>
+    <p>Khám phá bộ sưu tập màu sắc, cọ vẽ và dụng cụ sáng tạo chuyên nghiệp</p>
+  </div>
+
+  <!-- BEST SELLER -->
+  <section class="section">
+    <h3>🔥 Sản phẩm bán chạy</h3>
+    <div class="grid">
+
+      <div class="card">
+        <span class="badge best">Best</span>
+        <img src="https://images.unsplash.com/photo-1589187151053-5ec8818e662b"/>
+        <div class="card-content">
+          <h4>Bộ màu Acrylic cao cấp</h4>
+          <p class="price">120.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge best">Best</span>
+        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"/>
+        <div class="card-content">
+          <h4>Bộ cọ vẽ chuyên nghiệp</h4>
+          <p class="price">95.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOT PRODUCTS -->
+  <section class="section">
+    <h3>⚡ Sản phẩm hot</h3>
+    <div class="grid">
+
+      <div class="card">
+        <span class="badge hot">Hot</span>
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657"/>
+        <div class="card-content">
+          <h4>Bảng pha màu nghệ thuật</h4>
+          <p class="price">45.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge hot">Hot</span>
+        <img src="https://images.unsplash.com/photo-1616627981120-2c7b2c6a7a1f"/>
+        <div class="card-content">
+          <h4>Bút màu sketch 48 màu</h4>
+          <p class="price">150.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEAL PRODUCTS -->
+  <section class="section">
+    <h3>💸 Sản phẩm deal sốc</h3>
+    <div class="grid">
+
+      <div class="card">
+        <span class="badge deal">-30%</span>
+        <img src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c"/>
+        <div class="card-content">
+          <h4>Bộ màu nước mini</h4>
+          <p class="price">70.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge deal">-50%</span>
+        <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2"/>
+        <div class="card-content">
+          <h4>Bộ dụng cụ vẽ cơ bản</h4>
+          <p class="price">60.000đ</p>
+          <a href="#" class="btn">Mua ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Color Tools - All rights reserved</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên hệ - Color Tools</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    /* HEADER (đồng bộ) */
+    header {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      opacity: 0.9;
+    }
+
+    /* LAYOUT */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+
+    /* CONTACT FORM */
+    .form-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-box h3 {
+      margin-bottom: 15px;
+      border-left: 5px solid #ff6a00;
+      padding-left: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff6a00;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #ff6a00;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .btn:hover {
+      background: #ee0979;
+    }
+
+    /* INFO BOX */
+    .info-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .info-box h3 {
+      margin-bottom: 15px;
+      border-left: 5px solid #ee0979;
+      padding-left: 10px;
+    }
+
+    .info-item {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #ee0979;
+    }
+
+    /* MAP */
+    .map {
+      padding: 0 50px 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎨 Color Tools</h1>
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="lienhe.html">Liên hệ</a>
+      <a href="khuyenmai.html">Khuyến mãi</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Liên hệ với chúng tôi</h2>
+    <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn trong hành trình sáng tạo nghệ thuật</p>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="container">
+
+    <!-- FORM -->
+    <div class="form-box">
+      <h3>Gửi tin nhắn</h3>
+
+      <form>
+        <input type="text" placeholder="Họ và tên" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Chủ đề" />
+        <textarea rows="5" placeholder="Nội dung tin nhắn"></textarea>
+        <button class="btn" type="submit">Gửi liên hệ</button>
+      </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="info-box">
+      <h3>Thông tin liên hệ</h3>
+
+      <div class="info-item">📍 Địa chỉ: TP. Hồ Chí Minh, Việt Nam</div>
+      <div class="info-item">📞 Hotline: 0123 456 789</div>
+      <div class="info-item">✉️ Email: support@colortools.vn</div>
+      <div class="info-item">⏰ Giờ làm việc: 8:00 - 18:00</div>
+
+      <div class="social">
+        <p><b>Kết nối với chúng tôi:</b></p>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MAP -->
+  <section class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.258765...">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Color Tools. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
